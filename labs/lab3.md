@@ -17,7 +17,7 @@ Add text here
 # Part 1 (lab 3)
 ### Questions:
 - What is a command shell and why would I use one?
-- How can I move around on my computer?
+- How can I move around on RON?
 - How can I see what files and directories I have?
 - How can I specify the location of a file or directory on my computer?
 
@@ -51,7 +51,7 @@ Add text here
 - We have a special command to tell the computer to move us back or up one directory level.
 
 ### Your Notes Here: 
-Seperate notes by an empty line, or they'll get pasted together
+Seperate notes by an empty line, or they'll get pasted together.
 
 - Using a dash is helpful for lists
 1. And numbers for lists
@@ -60,8 +60,25 @@ The pound sign is used for 'sections'. A single pound (or hashtag) in front of a
 
 # My Notes:
 
-To change directories, use 'cd' and then hit tab two times to see directories in my current directory
+To change directories, use 'cd' and then hit tab two times to see directories in my current directory. 
 
+First command is print working directory (pwd). Within a directory, there might be more directories, or files in files. A directory tracked by git hub is a repository. 
+
+To make a list of files in the directory, use ls. BASH commands have options, and the options will allow you to specify things.
+Flavors of ls:  
+     1. ls-F - will show slashes to indicate if there are files, so you can determine if you want to change directories down or not.
+     2. man ls - manual for ls options. q will bring you back out of the manual.
+     3. ls -lrth prints extra information about the directories (when it was made, who owns it, etc.)
+
+cd commands will let you navigate your directories:
+     1. cd ../ will step you back one level.  
+     2. cd ~ shorthand for your home directory.
+
+An absolute path starts all the way back to the base or root of the computer vs a short cd (ex. /home/users/sen97/gen711-811/shell_data)
+
+If you have an unclosed quote or parentheses, you can press ctrl+c to get out of it. It also works for ending active processes.  
+
+In some cases we don't want to open up a whole file, because its huge, we just want to see the first few lines. So we can use the head command.
 
 
 
