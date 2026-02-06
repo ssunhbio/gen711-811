@@ -86,7 +86,11 @@ The History command will show you your coding history.
 
 grep will search through a file and return only the lines you are searching for. If you include the ^ symbol, it will tell the search to look for the thing you are looking for at the begining of the line.  
 
-To redirect the output to a file, we can use the greater than symbol after your prompt (ex. grep "^@" SRR097977.fastq > headerlines.txt)
+To redirect the output to a file, we can use the greater than symbol after your prompt (ex. grep "^@" SRR097977.fastq > headerlines.txt).
+
+Pipe special character | Pipes an output to a different command, so we can count with word count, or wc, and add -l to tell it to count the number of lines.  If you just do wc alone, it will print lines, words, characters. Can also use ls | grep '^c' to search for  something (remember, ^ is "starts with").
+
+The command less will let you scroll through the whole file.  
 
 `### Complete the questions below when intrstructed. Push the changes to this document to recive credit for attending the lab
 
@@ -126,3 +130,4 @@ Contain the letter a _644_
 End with the letter o _34_
 
 #### What command/commands would you use to find the line number in your history for the command that listed all the '.fastq' files using the absolute path. Paste your answer below.
+history
