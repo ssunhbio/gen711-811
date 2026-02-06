@@ -66,13 +66,13 @@ First command is print working directory (pwd). Within a directory, there might 
 
 To make a list of files in the directory, use ls. BASH commands have options, and the options will allow you to specify things.
 Flavors of ls:  
-     1. ls-F - will show slashes to indicate if there are files, so you can determine if you want to change directories down or not.
-     2. man ls - manual for ls options. q will bring you back out of the manual.
-     3. ls -lrth prints extra information about the directories (when it was made, who owns it, etc.)
+1. ls-F - will show slashes to indicate if there are files, so you can determine if you want to change directories down or not.
+2. man ls - manual for ls options. q will bring you back out of the manual.
+3. ls -lrth prints extra information about the directories (when it was made, who owns it, etc.)
 
 cd commands will let you navigate your directories:
-     1. cd ../ will step you back one level.  
-     2. cd ~ shorthand for your home directory.
+1. cd ../ will step you back one level.  
+2. cd ~ shorthand for your home directory.
 
 An absolute path starts all the way back to the base or root of the computer vs a short cd (ex. /home/users/sen97/gen711-811/shell_data)
 
@@ -80,41 +80,49 @@ If you have an unclosed quote or parentheses, you can press ctrl+c to get out of
 
 In some cases we don't want to open up a whole file, because its huge, we just want to see the first few lines. So we can use the head command.
 
+The echo command will tell you details about the variable you put in (ex. $home)
+ 
+The History command will show you your coding history.  
 
+grep will search through a file and return only the lines you are searching for. If you include the ^ symbol, it will tell the search to look for the thing you are looking for at the begining of the line.  
 
+To redirect the output to a file, we can use the greater than symbol after your prompt (ex. grep "^@" SRR097977.fastq > headerlines.txt)
 
-### Complete the questions below when intrstructed. Push the changes to this document to recive credit for attending the lab
+`### Complete the questions below when intrstructed. Push the changes to this document to recive credit for attending the lab
 
 #### 1. What are 3 ways to change directories to your home directory from the  untrimmed_fastq directory?
 1. cd $HOME
-2. Go to "File", then "Open Folder"
-3. Ctrl K Ctrl O
+2. cd ../ (repeat until you get to the home)
+3. cd ~
+4. cd /home/users/sen97 (absolute path)
 
 #### 2. How many programs in /bin 
 2. Do each of the following tasks from your current directory using a single ls command for each:
 
-    $ cd /bin
+    $ cd /bin (I used | wc -l to count)
 
     - List all of the files in /bin that start with the letter ‘c’.
 
-    $  ls c*| wc -l
+    $  ls c*
 
     - List all of the files in /bin that contain the letter ‘a’.
 
-    $  ls *a*| wc -l
+    $  ls *a*
 
     - List all of the files in /bin that end with the letter ‘o’.
 
-    $ ls *o| wc -l
+    $ ls *o
 
     - Bonus: List all of the files in /bin that contain the letter ‘a’ or the letter ‘c’.
 
-    $ ls *[ac]*| wc -l
+    $ ls *[ac]*
 
 #### Answers here
 Start with the letter c _94_
+Start with the letter a _49_
+Start with the letter o _16_
+Contain the letter ‘a’ or the letter ‘c’ _926_
 Contain the letter a _644_
 End with the letter o _34_
-Contain the letter ‘a’ or the letter ‘c’ _926_
 
 #### What command/commands would you use to find the line number in your history for the command that listed all the '.fastq' files using the absolute path. Paste your answer below.
