@@ -69,21 +69,35 @@ To change directories, use 'cd' and then hit tab two times to see directories in
 ### Complete the questions below when intrstructed. Push the changes to this document to recive credit for attending the lab
 
 #### 1. What are 3 ways to change directories to your home directory from the  untrimmed_fastq directory?
-1.
-2.
-3.
+1. cd $HOME
+2. Go to "File", then "Open Folder"
+3. Ctrl K Ctrl O
 
 #### 2. How many programs in /bin 
 2. Do each of the following tasks from your current directory using a single ls command for each:
+
+    $ cd /bin
+
     - List all of the files in /bin that start with the letter ‘c’.
+
+    $  ls c*| wc -l
+
     - List all of the files in /bin that contain the letter ‘a’.
+
+    $  ls *a*| wc -l
+
     - List all of the files in /bin that end with the letter ‘o’.
+
+    $ ls *o| wc -l
+
     - Bonus: List all of the files in /bin that contain the letter ‘a’ or the letter ‘c’.
 
+    $ ls *[ac]*| wc -l
+
 #### Answers here
-Start with the letter c ____
-Start with the letter a ____
-Start with the letter o ____
-Contain the letter ‘a’ or the letter ‘c’ ____
+Start with the letter c _94_
+Contain the letter a _644_
+End with the letter o _34_
+Contain the letter ‘a’ or the letter ‘c’ _926_
 
 #### What command/commands would you use to find the line number in your history for the command that listed all the '.fastq' files using the absolute path. Paste your answer below.
