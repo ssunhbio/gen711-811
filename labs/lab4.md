@@ -24,7 +24,7 @@ exercises: 15
 
 ### EXERCISE 1: NAVIGATION PRACTICE
 Navigate to your untrimmed_fastq directory in one command
-
+f
 ### EXERCISE 2: WILDCARDS
 What would the output look like if the wildcard could *not* be matched? Compare the outputs
 
