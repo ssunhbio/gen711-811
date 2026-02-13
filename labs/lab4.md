@@ -24,13 +24,13 @@ exercises: 15
 
 ### EXERCISE 1: NAVIGATION PRACTICE
 Navigate to your untrimmed_fastq directory in one command
-f
+cd gen711-811/shell_data/untrimmed_fastq
 ### EXERCISE 2: WILDCARDS
 What would the output look like if the wildcard could *not* be matched? Compare the outputs
 
 ### EXERCISE 3: NAVIGATING PRACTICE
 Navigate to your home directory. From there, list the contents of the untrimmed_fastq directory.
-
+cd gen 711-811/shell_data/untrimmed_fastq | ls
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
