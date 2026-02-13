@@ -24,21 +24,38 @@ exercises: 15
 
 ### EXERCISE 1: NAVIGATION PRACTICE
 Navigate to your untrimmed_fastq directory in one command
-cd gen711-811/shell_data/untrimmed_fastq
+
+ANSWER: cd gen711-811/shell_data/untrimmed_fastq
+
 ### EXERCISE 2: WILDCARDS
 What would the output look like if the wildcard could *not* be matched? Compare the outputs
 
+ANSWER:  ls: cannot access '*h': No such file or directory
+
 ### EXERCISE 3: NAVIGATING PRACTICE
 Navigate to your home directory. From there, list the contents of the untrimmed_fastq directory.
-cd gen 711-811/shell_data/untrimmed_fastq | ls
+
+ANSWER: ls gen711-811/shell_data/untrimmed_fastq
 
 :::::::::::::::::::::::::::::::::::::::  challenge
-ls -a
+
+
+## Notes
+ls -laF: Who made the file
+ls /usr/bin/
+ls /usr/bin/*sh : limit to names starting with 
+cat - print file to screen
+less: show the contents of a file. Within less, use / and what you are searching for to move around, q to quitq
+head and tail will give you the first or last few lines of a fastq, with -n and a number (so -3) will give you three lines.
+mkdir backup back ups directory
+cp makes a copy of the file cp SRR098026.fastq SRR098026-backup.fastq (second name is name of backup)
+mv *backup.fastq backup/ moved anything with the file name backup to our backup folder
+
 ## Relative path resolution
 
 Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
 what will `ls ../backup` display?
-
+![alt text](image.png)
 1. `../backup: No such file or directory`
 2. `2012-12-01 2013-01-08 2013-01-27`
 3. `2012-12-01/ 2013-01-08/ 2013-01-27/`
@@ -57,6 +74,8 @@ what will `ls ../backup` display?
   Also, we did not specify `-F` to display `/` at the end of the directory names.
 4. Yes: `../backup` refers to `/Users/backup`.
 
+ANSWER: Yes
+
 :::::::::::::::::::::::::
 
 
@@ -67,17 +86,27 @@ Hint: hidden files and folders in Unix start with ., for example .my_hidden_dire
 
 What is the hidden file name in the hidden directory?
 
+ANSWER: ls -a .hidden
+
 ### EXERCISE 5: HISTORY
 Find the line number in your history for the command that listed all the .sh files in /usr/bin. Rerun that command.
 
+ANSWER: history 
+!189 (! lets you rerun a number from history linked to a command)
+
 ### EXERCISE 6: FILE CONTENTS
 Print out the contents of the ~/shell_data/untrimmed_fastq/SRR097977.fastq file. What is the last line of the file?
+C:CCC::CCCCCCCC<8?6A:C28C<608'&&&,'$
 
 ### EXERCISE 7: PATHS
 From your home directory, and without changing directories, use one short command to print the contents of all of the files in the ~/shell_data/untrimmed_fastq directory.
 
-### EXERCISE 8: LESS
+ls gen711-811/shell_data/untrimmed_fastq
+
+### EXERCISE 8: LESS (SEQUENCE TTTTTq)
 What are the next three nucleotides (characters) after the first instance of the sequence quoted above?
+
+CTC
 
 ### File Permissions Help
 The first part of the output for the `-l` flag gives you information about the file's current permissions. There are ten slots in the
