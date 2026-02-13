@@ -33,7 +33,7 @@ Navigate to your home directory. From there, list the contents of the untrimmed_
 cd gen 711-811/shell_data/untrimmed_fastq | ls
 
 :::::::::::::::::::::::::::::::::::::::  challenge
-
+ls -a
 ## Relative path resolution
 
 Using the filesystem diagram below, if `pwd` displays `/Users/thing`,
