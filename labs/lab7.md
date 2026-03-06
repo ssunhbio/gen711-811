@@ -72,7 +72,7 @@ We are going to use a long-term sequencing dataset from a population of *Escheri
 
 ### View the metadata
 
-We will be working with three sample events from the **Ara-3** strain of this experiment, one from 5,000 generations, one from 15,000 generations, and one from 50,000 generations. The population changed substantially during the course of the experiment, and we will be exploring how (the evolution of a **Cit+** mutant and **hypermutability**) with our variant calling workflow. The metadata file associated with this lesson can be [downloaded directly here](files/Ecoli_metadata_composite.csv) or [viewed in Github](https://github.com/datacarpentry/wrangling-genomics/blob/main/episodes/files/Ecoli_metadata_composite.csv). If you would like to know details of how the file was created, you can look at [some notes and sources here](https://github.com/datacarpentry/wrangling-genomics/blob/main/episodes/files/Ecoli_metadata_composite_README.md).
+We will be working with three sample events from the **Ara-3** strain of this experiment, one from 5,000 generations, one from 15,000 generations, and one from 50,000 generations. The population changed substantially during the course of the experiment, and we will be exploring how (the evolution of a **Cit+** mutant and **hypermutability**) with our variant calling workflow. The metadata file associated with this lesson can be [downloaded directly here](files/Ecoli_metadata_composite.csv) or [viewed in Github](https://githuwgb.com/datacarpentry/wrangling-genomics/blob/main/episodes/files/Ecoli_metadata_composite.csv). If you would like to know details of how the file was created, you can look at [some notes and sources here](https://github.com/datacarpentry/wrangling-genomics/blob/main/episodes/files/Ecoli_metadata_composite_README.md).
 
 This metadata describes information on the *Ara-3* clones and the columns represent:
 
@@ -101,9 +101,36 @@ Based on the metadata, can you answer the following questions?
 
    ANSWER: 50000
 
+##MY NOTES:#################################
+
+to get file --> wget "url"
+
+to open file in terminal --> less Ecoli_metadata_composite.csv
+
+to rename a file --> mv Ecoli_metadata_composite.csv.1 Ecoli_metadata_composite.csv
+
+to delete a file --> rm Ecoli_metadata_composite.csv.1 
+
+To get total column count --> head -n1 Ecoli_metadata_composite.csv | tr ',' '\n' | wc -l
+
+To get rows count --> wc -l Ecoli_metadata_composite.csv
+
+less -s Ecoli_metadata_composite.csv 
+
+extract just one column --> 
+cut -f6 -d',' Ecoli_metadata_composite.csv 
+
+to multi-select for the same code --> highlight it, then control+d will find it repeatidly, then can delete.
+
+to focus on one column, then sort it and pull out unique values to count how many there are --> 
+cut -f6 -d',' Ecoli_metadata_composite.csv | sort | uniq -c
+
+to find everything that starts with a value --> grep^
+
+$ is short for end of line
 2. How many rows and how many columns are in this data?
 
-   ANSWER : 63 rows (62 if excluding header), 12 Columns
+   ANSWER : 63 rows, 12 Columns
 
 3. How many citrate+ mutants have been recorded in **Ara-3**?
 
