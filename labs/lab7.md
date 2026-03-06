@@ -98,9 +98,20 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 Based on the metadata, can you answer the following questions?
 
 1. How many different generations exist in the data?
+
+   ANSWER: 50000
+
 2. How many rows and how many columns are in this data?
+
+   ANSWER : 63 rows (62 if excluding header), 12 Columns
+
 3. How many citrate+ mutants have been recorded in **Ara-3**?
+
+   ANSWER: 10
+
 4. How many hypermutable mutants have been recorded in **Ara-3**?
+
+   ANSWER: 6
 
 
 
